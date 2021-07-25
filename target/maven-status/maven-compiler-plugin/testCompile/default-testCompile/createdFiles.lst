@@ -1,0 +1,3 @@
+com\pages\CommonPages.class
+com\runner\Runner.class
+com\stepDefinitions\Common.class

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [SkyggeElite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="3" parallel="tests" name="Android(failed)" verbose="0">
+    <parameter name="desiredCapabilities" value="        {        &#039;platformName&#039;:&#039;Android&#039;,        &#039;automationName&#039;:&#039;Appium&#039;,        &#039;app&#039;:&#039;app/Skygge_UAT_Demo_22_05_2021.apk&#039;,        &#039;appPackage&#039;:&#039;com.skygge.sgg&#039;,        &#039;appActivity&#039;:&#039;com.doshaheen.www.gpsrecorder.SplashScreen&#039;,        &#039;autoGrantPermissions&#039;:&#039;true&#039;        }"/>
+    <parameter name="platform" value="android"/>
+    <classes>
+      <class name="com.runner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.runner.Runner -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [SkyggeElite] -->

@@ -1,0 +1,154 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-24T13:09:27.352Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6429800900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hooks.CucumberHooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "As a user I want to edit customer profile",
+        "description": "",
+        "id": "customer-profile-scenarios;as-a-user-i-want-to-edit-customer-profile;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 309469600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hooks.CucumberHooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user opens the app",
+            "match": {
+              "location": "com.stepDefinitions.Common.openApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18771960400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user login using $9478512546",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9478512546",
+                  "offset": 18
+                }
+              ],
+              "location": "com.stepDefinitions.Users.login(java.lang.Long)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 735474700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Customer Profile",
+            "match": {
+              "location": "com.stepDefinitions.HomeStepDefinition.clickOnCustomerProfile()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108537700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Plus icon",
+            "match": {
+              "location": "com.stepDefinitions.customerSetpDefinitions.clickOnPlusIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2111033700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on edit customer profile button",
+            "match": {
+              "location": "com.stepDefinitions.customerSetpDefinitions.clickOnEditCustomerBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1309075000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user fills customer details",
+            "match": {
+              "location": "com.stepDefinitions.customerSetpDefinitions.fillCustomerDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: class com.sun.proxy.$Proxy21 cannot be cast to class org.openqa.selenium.internal.HasIdentity (com.sun.proxy.$Proxy21 and org.openqa.selenium.internal.HasIdentity are in unnamed module of loader \u0027app\u0027)\r\n\tat io.appium.java_client.touch.offset.ElementOption.withElement(ElementOption.java:89)\r\n\tat io.appium.java_client.touch.offset.ElementOption.element(ElementOption.java:49)\r\n\tat com.utils.AndroidUtils.scroll(AndroidUtils.java:15)\r\n\tat com.pages.CustomerProfilePage.clickOnSaveBtn(CustomerProfilePage.java:97)\r\n\tat com.stepDefinitions.customerSetpDefinitions.clickOnSaveBtn(customerSetpDefinitions.java:27)\r\n\tat ✽.user clicks on save button(file:///E:/Work/V/SkyggeElite/feature/customerProfile.feature:12)\r\n",
+              "duration": 3001000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "com.stepDefinitions.customerSetpDefinitions.clickOnSaveBtn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@customer"
+          }
+        ]
+      }
+    ],
+    "name": "Customer Profile scenarios",
+    "description": "",
+    "id": "customer-profile-scenarios",
+    "keyword": "Feature",
+    "uri": "file:feature/customerProfile.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
