@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.TestBase;
+import com.utils.AndroidUtils;
 
 public class RegistrationPage extends TestBase {
 	
@@ -121,13 +122,13 @@ public class RegistrationPage extends TestBase {
 		HomePage homePage = new HomePage();
 		Boolean loginFlag = true;
 		try {
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			AndroidUtils.updateImplicitWaitTime(3);
 			termsConditionPage.checkIfAlreadyLogin();
 			loginFlag = false;
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		driver.manage().timeouts().implicitlyWait(Integer.parseInt(configProp.getProperty("implicitWait")), TimeUnit.SECONDS);
+		AndroidUtils.resetImplicitWaitTime();
 		if(loginFlag) {
 			homePage.checkIfUserIsOnHomePage();
 			System.out.println("Already login");

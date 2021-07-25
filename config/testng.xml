@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="SkyggeElite" parallel="tests" thread-count="3">
- 
-    <test name="Android">
-    <parameter name="platform" value="android" />
-    <parameter name="desiredCapabilities" value="
+
+	<test name="Android">
+		<parameter name="platform" value="android" />
+		<parameter name="desiredCapabilities"
+			value="
     			{
     			'platformName':'Android',
     			'automationName':'Appium',
     			'app':'app/Skygge_UAT_Demo_22_05_2021.apk',
     			'appPackage':'com.skygge.sgg',
     			'appActivity':'com.doshaheen.www.gpsrecorder.SplashScreen',
-    			'autoGrantPermissions':'true'
-    			}" 
-    			/>
-        <classes>
-            <class name="com.runner.Runner" />
-        </classes>
-    </test>
-    
- 
+    			'autoGrantPermissions':'true',
+    			'noReset':'false'
+    			}" />
+		<classes>
+			<class name="com.runner.Runner" />
+		</classes>
+	</test>
 </suite>

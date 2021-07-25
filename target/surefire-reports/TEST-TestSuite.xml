@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="29.901" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="41.948" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -24,9 +24,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Work\Eclipse Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8662620909869506628.tmp"/>
+    <property name="classworlds.conf" value="E:\Work\Eclipse Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16578877893850133046.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="E:\Installed\Eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/Installed/Eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;E:/Installed/Eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Ryzen\AppData\Local\Microsoft\WindowsApps;;E:\Installed\Eclipse;;."/>
+    <property name="java.library.path" value="E:\Installed\Eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/Installed/Eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;E:/Installed/Eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\Ryzen\AppData\Local\Microsoft\WindowsApps;;E:\Installed\Eclipse;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="59.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -55,28 +55,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="com.runner.Runner" time="29.901">
-    <failure message="class com.sun.proxy.$Proxy21 cannot be cast to class org.openqa.selenium.internal.HasIdentity (com.sun.proxy.$Proxy21 and org.openqa.selenium.internal.HasIdentity are in unnamed module of loader &apos;app&apos;)" type="java.lang.ClassCastException">java.lang.ClassCastException: class com.sun.proxy.$Proxy21 cannot be cast to class org.openqa.selenium.internal.HasIdentity (com.sun.proxy.$Proxy21 and org.openqa.selenium.internal.HasIdentity are in unnamed module of loader 'app')
-	at io.appium.java_client.touch.offset.ElementOption.withElement(ElementOption.java:89)
-	at io.appium.java_client.touch.offset.ElementOption.element(ElementOption.java:49)
-	at com.utils.AndroidUtils.scroll(AndroidUtils.java:15)
-	at com.pages.CustomerProfilePage.clickOnSaveBtn(CustomerProfilePage.java:97)
-	at com.stepDefinitions.customerSetpDefinitions.clickOnSaveBtn(customerSetpDefinitions.java:27)
-	at ✽.user clicks on save button(file:///E:/Work/V/SkyggeElite/feature/customerProfile.feature:12)
-</failure>
-    <system-out>App is open
-org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RYZEN', ip: '169.254.53.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\Work\V\SkyggeElite\app\S..., appActivity: com.doshaheen.www.gpsrecord..., appPackage: com.skygge.sgg, autoGrantPermissions: true, automationName: Appium, databaseEnabled: false, desired: {app: E:\Work\V\SkyggeElite\app\S..., appActivity: com.doshaheen.www.gpsrecord..., appPackage: com.skygge.sgg, autoGrantPermissions: true, automationName: Appium, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: a64540a3-f431-4fd1-b228-acc757f2607d
-*** Element info: {Using=xpath, value=//*[contains(@resource-id,'id/accept')]}
-Already login
-</system-out>
-    <system-err>Jul 24, 2021 6:39:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
+  <testcase name="runScenario" classname="com.runner.Runner" time="41.948"/>
 </testsuite>
